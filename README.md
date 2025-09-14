@@ -1,4 +1,4 @@
-Rabit — Full-Stack E-Commerce App
+Full-Stack E-Commerce App
 
 Stack: React + Tailwind CSS + Redux (Thunk) · Node.js · Express · MongoDB (Mongoose) · PayPal · Multer/Cloudinary · 
 
