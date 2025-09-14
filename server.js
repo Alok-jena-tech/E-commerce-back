@@ -17,13 +17,24 @@ const app=express();
 app.use(express.json());
 
 // ✅ Configure CORS to allow all origins & methods
+const allowedOrigins = [
+  "http://localhost:5173",                 // local dev
+  "https://e-commerce-frontend-pffk.vercel.app" // deployed frontend
+];
+
 app.use(cors({
-  origin: "*", // frontend
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
 }));
-// app.options("*", cors()); // handle preflight
+
 
 
 dotenv.config();
