@@ -19,7 +19,7 @@ app.use(express.json());
 // ✅ Configure CORS to allow all origins & methods
 const allowedOrigins = [
   "http://localhost:5173",                 // local dev
-  "https://e-commerce-frontend-pffk.vercel.app" // deployed frontend
+  // "https://e-commerce-frontend-pffk.vercel.app" // deployed frontend
 ];
 
 app.use(cors({
