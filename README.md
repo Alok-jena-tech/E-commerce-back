@@ -77,13 +77,8 @@ cd backend — set .env (MONGO_URI, JWT_SECRET, CLOUDINARY creds)
 npm install
 
 npm run dev (for backend)
-Frontend: set VITE_API_URL=http://localhost:5000 then npm install && npm run dev.
+Frontend:  npm install && npm run dev.
 
-Deployment
-
-Backend exports Express app for Vercel serverless (module.exports = app), Vercel environment variables set for DB and secrets.
-
-Frontend uses VITE_API_URL to call backend.
 
 MongoDB Atlas used as the cloud database.
 
