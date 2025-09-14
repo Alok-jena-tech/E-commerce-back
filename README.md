@@ -1,6 +1,6 @@
 Rabit — Full-Stack E-Commerce App
 
-Stack: React + Tailwind CSS + Redux (Thunk) · Node.js · Express · MongoDB (Mongoose) · PayPal · Multer/Cloudinary · Vercel (deploy)
+Stack: React + Tailwind CSS + Redux (Thunk) · Node.js · Express · MongoDB (Mongoose) · PayPal · Multer/Cloudinary · 
 
 Project Summary
 
